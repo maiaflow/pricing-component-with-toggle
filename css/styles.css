@@ -1,11 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+*, *:after, *:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
-  background: hsl(240, 78%, 98%);
+  background: url(../images/bg-top.svg) 190px -40px hsl(240, 78%, 98%) no-repeat;
+  padding: 3rem 1rem;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 body header h1 {
-  color: hsl(232, 13%, 33%);
+  color: hsl(233, 13%, 49%);
+  margin: 0;
+  font-size: 2.1rem;
+}
+body header nav {
+  color: hsl(234, 14%, 74%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 body main {
   display: flex;
@@ -15,8 +37,27 @@ body main {
 body main article {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
   background: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0rem 1rem 1rem -1rem hsl(234, 14%, 74%);
+}
+body main article h2 {
+  color: hsl(233, 13%, 49%);
+}
+body main article p {
+  color: hsl(232, 13%, 33%);
+  font-size: 4rem;
+}
+body main article li {
+  color: hsl(233, 13%, 49%);
+  list-style: none;
+  border-bottom: 1px solid hsl(234, 14%, 74%);
+  padding: 1rem 0;
+}
+body main article li:first-child {
+  border-top: 1px solid hsl(234, 14%, 74%);
 }
 body main article button {
   background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
@@ -24,6 +65,6 @@ body main article button {
   color: #fff;
   text-transform: uppercase;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 0.5rem;
   border: 0;
 }/*# sourceMappingURL=styles.css.map */

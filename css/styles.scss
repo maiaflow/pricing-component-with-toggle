@@ -1,13 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import "variables";
 
+*, *:after, *:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-    background: $verylightgrayishblue;
+    background: url(../images/bg-top.svg) 190px -40px $verylightgrayishblue no-repeat;
+    padding: 3rem 1rem;
     header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
         h1 {
-            color: $darkgrayishblue;
+            color: $grayishblue;
+            margin: 0;
+            font-size: 2.1rem;
+        }
+        nav {
+            color: $lightgrayishblue;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
         }
     }
     main {
@@ -17,15 +37,34 @@ body {
         article {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            text-align: center;
             background: #fff;
+            border-radius: 1rem;
+            padding: 1rem;
+            box-shadow: 0rem 1rem 1rem -1rem $lightgrayishblue;
+            h2 {
+                color: $grayishblue;
+            }
+            p {
+                color: $darkgrayishblue;
+                font-size: 4rem;
+            }
+            li {
+                color: $grayishblue;
+                list-style: none;
+                border-bottom: 1px solid $lightgrayishblue;
+                padding: 1rem 0;
+                &:first-child {
+                    border-top: 1px solid $lightgrayishblue;
+                }
+            }
             button {
                 background: linear-gradient(90deg,$gradient1,$gradient2);
                 font-family: inherit;
                 color: #fff;
                 text-transform: uppercase;
                 padding: 10px 20px;
-                border-radius: 20px;
+                border-radius: .5rem;
                 border: 0;
             }
         }
