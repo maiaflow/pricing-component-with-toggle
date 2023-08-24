@@ -9,7 +9,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   background: url(../images/bg-top.svg) 190px -40px hsl(240, 78%, 98%) no-repeat;
-  padding: 3rem 1rem;
+  padding: 4rem 1.5rem;
 }
 body header {
   display: flex;
@@ -27,7 +27,8 @@ body header nav {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  height: 33px;
 }
 body main {
   display: flex;
@@ -39,32 +40,60 @@ body main article {
   flex-direction: column;
   text-align: center;
   background: #fff;
-  border-radius: 1rem;
-  padding: 1rem;
+  border-radius: 0.5rem;
+  padding: 2rem;
   box-shadow: 0rem 1rem 1rem -1rem hsl(234, 14%, 74%);
+}
+body main article.inverted {
+  background: linear-gradient(141deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+body main article.inverted h2, body main article.inverted p, body main article.inverted li {
+  color: #fff;
+  border-color: hsl(240, 78%, 98%);
+}
+body main article.inverted li:first-child {
+  border-color: hsl(240, 78%, 98%);
+}
+body main article.inverted button {
+  background: #fff;
+  color: hsl(237, 63%, 64%);
 }
 body main article h2 {
   color: hsl(233, 13%, 49%);
+  font-size: 1.15rem;
+  margin-bottom: 1.5rem;
 }
 body main article p {
   color: hsl(232, 13%, 33%);
-  font-size: 4rem;
+  font-size: 4.4rem;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
 }
-body main article li {
+body main article p sub {
+  font-size: 2.5rem;
+}
+body main article ul {
+  margin: 2rem 0;
+}
+body main article ul li {
   color: hsl(233, 13%, 49%);
   list-style: none;
   border-bottom: 1px solid hsl(234, 14%, 74%);
   padding: 1rem 0;
 }
-body main article li:first-child {
+body main article ul li:first-child {
   border-top: 1px solid hsl(234, 14%, 74%);
 }
 body main article button {
   background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   font-family: inherit;
+  font-size: 0.75rem;
   color: #fff;
   text-transform: uppercase;
-  padding: 10px 20px;
-  border-radius: 0.5rem;
+  letter-spacing: 2px;
+  padding: 15px 20px;
+  border-radius: 0.3rem;
   border: 0;
 }/*# sourceMappingURL=styles.css.map */
