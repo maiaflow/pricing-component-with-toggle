@@ -15,20 +15,64 @@ body header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 body header h1 {
   color: hsl(233, 13%, 49%);
   margin: 0;
-  font-size: 2.1rem;
+  font-size: 2rem;
 }
 body header nav {
   color: hsl(234, 14%, 74%);
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 4rem;
-  height: 33px;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+body header nav .check-switch input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+body header nav label.check-switch {
+  clear: both;
+  color: #999;
+  display: inline-block;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body header nav .check-switch input[type=checkbox] + .track {
+  vertical-align: middle;
+  width: 56px;
+  height: 31px;
+  border-radius: 999px;
+  background: linear-gradient(141deg, hsl(237, 63%, 64%), hsl(236, 72%, 79%));
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-property: background-color, box-shadow;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+body header nav .check-switch input[type=checkbox]:checked + div {
+  background: linear-gradient(141deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+body header nav .check-switch input[type=checkbox] + div > div {
+  position: relative;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  border-radius: inherit;
+  background: #ffffff;
+  -webkit-transition-timing-function: cubic-bezier(0.54, 1.85, 0.5, 1);
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-property: transform, background-color, box-shadow;
+  -moz-transition-timing-function: cubic-bezier(0.54, 1.85, 0.5, 1);
+  -moz-transition-duration: 0.3s;
+  -moz-transition-property: transform, background-color;
+  margin-top: 0;
+  transition: left 0.2s ease-in-out;
+}
+body header nav .check-switch input[type=checkbox]:checked + div > div {
+  left: 28px;
+  background-color: #fff;
 }
 body main {
   display: flex;
@@ -41,7 +85,7 @@ body main article {
   text-align: center;
   background: #fff;
   border-radius: 0.5rem;
-  padding: 2rem;
+  padding: 2.2rem 2rem 2rem;
   box-shadow: 0rem 1rem 1rem -1rem hsl(234, 14%, 74%);
 }
 body main article.inverted {
@@ -49,10 +93,10 @@ body main article.inverted {
 }
 body main article.inverted h2, body main article.inverted p, body main article.inverted li {
   color: #fff;
-  border-color: hsl(240, 78%, 98%);
+  border-color: hsl(236, 72%, 79%);
 }
 body main article.inverted li:first-child {
-  border-color: hsl(240, 78%, 98%);
+  border-color: hsl(236, 72%, 79%);
 }
 body main article.inverted button {
   background: #fff;
@@ -61,11 +105,12 @@ body main article.inverted button {
 body main article h2 {
   color: hsl(233, 13%, 49%);
   font-size: 1.15rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 body main article p {
   color: hsl(232, 13%, 33%);
-  font-size: 4.4rem;
+  font-size: 4.5rem;
+  letter-spacing: -0.7px;
   display: flex;
   gap: 5px;
   align-items: center;
@@ -75,16 +120,16 @@ body main article p sub {
   font-size: 2.5rem;
 }
 body main article ul {
-  margin: 2rem 0;
+  margin: 1.5rem 0 2rem;
 }
 body main article ul li {
   color: hsl(233, 13%, 49%);
   list-style: none;
-  border-bottom: 1px solid hsl(234, 14%, 74%);
+  border-bottom: 1px solid hsl(234, 14%, 85%);
   padding: 1rem 0;
 }
 body main article ul li:first-child {
-  border-top: 1px solid hsl(234, 14%, 74%);
+  border-top: 1px solid hsl(234, 14%, 85%);
 }
 body main article button {
   background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
