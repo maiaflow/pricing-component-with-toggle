@@ -1,0 +1,13 @@
+@media (min-width:1200px) {
+    body {
+        main {
+            gap: 0;
+            flex-direction: row;
+            article {
+                &.inverted {
+                    padding: 4.2rem 2rem 4rem;
+                }
+            }
+        }
+    }
+}
