@@ -10,7 +10,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
-    background: url(../images/bg-top.svg) 190px -40px $verylightgrayishblue no-repeat;
+    background: url(../images/bg-top.svg) 195px -36px $verylightgrayishblue no-repeat;
     padding: 4rem 1.5rem;
     header {
         display: flex;
@@ -93,7 +93,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 32px;
         article {
             display: flex;
             flex-direction: column;
@@ -101,7 +101,7 @@ body {
             background: #fff;
             border-radius: .5rem;
             padding: 2.2rem 2rem 2rem;
-            box-shadow: 0rem 1rem 1rem -1rem $lightgrayishblue;
+            box-shadow: 0rem 1rem 1rem 0rem hsl(234, 14%, 90%);
             max-width: 500px;
             width: 100%;
             &.inverted {
@@ -117,7 +117,7 @@ body {
                     background: #fff;
                     color: $gradient2;
                     &:hover {
-                        border-color: #fff;
+                        box-shadow: 0 0 0 1px white;
                         background: none;
                         color: #fff;
                     }
@@ -131,9 +131,9 @@ body {
             p {
                 color: $darkgrayishblue;
                 font-size: 4.5rem;
-                letter-spacing: -0.7px;
+                letter-spacing: -2.1px;
                 display: flex;
-                gap: 5px;
+                gap: 6px;
                 align-items: center;
                 justify-content: center;
                 sub {
@@ -161,11 +161,12 @@ body {
                 letter-spacing: 2px;
                 padding: 15px 20px;
                 border-radius: .3rem;
-                border: 1px solid transparent;
-                transition: all .2s ease-in-out;
+                border: 0;
+                box-shadow: 0 0 0 1px transparent;
+                // transition: all .2s ease-in-out;
                 cursor: pointer;
                 &:hover {
-                    border-color: $gradient2;
+                    box-shadow: 0 0 0 1px $gradient2;
                     background: none;
                     color: $gradient2;
                 }

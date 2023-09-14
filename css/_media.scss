@@ -1,11 +1,27 @@
 @media (min-width:1200px) {
     body {
+        background: url(../images/bg-top.svg) top right no-repeat, url(../images/bg-bottom.svg) bottom left no-repeat $verylightgrayishblue;
+        min-height: 100vh;
+        padding-top: 72px;
+        header nav {
+                margin-bottom: 4rem;
+            }
         main {
             gap: 0;
             flex-direction: row;
+            max-width: 1050px;
+            margin: 0 auto;
             article {
                 &.inverted {
-                    padding: 4.2rem 2rem 4rem;
+                    padding: 3.7rem 2rem 3.4rem;
+                }
+                &#basic {
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+                &#master {
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
                 }
             }
         }

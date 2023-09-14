@@ -8,7 +8,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
-  background: url(../images/bg-top.svg) 190px -40px hsl(240, 78%, 98%) no-repeat;
+  background: url(../images/bg-top.svg) 195px -36px hsl(240, 78%, 98%) no-repeat;
   padding: 4rem 1.5rem;
 }
 body header {
@@ -85,7 +85,7 @@ body main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 32px;
 }
 body main article {
   display: flex;
@@ -94,7 +94,7 @@ body main article {
   background: #fff;
   border-radius: 0.5rem;
   padding: 2.2rem 2rem 2rem;
-  box-shadow: 0rem 1rem 1rem -1rem hsl(234, 14%, 74%);
+  box-shadow: 0rem 1rem 1rem 0rem hsl(234, 14%, 90%);
   max-width: 500px;
   width: 100%;
 }
@@ -113,7 +113,7 @@ body main article.inverted button {
   color: hsl(237, 63%, 64%);
 }
 body main article.inverted button:hover {
-  border-color: #fff;
+  box-shadow: 0 0 0 1px white;
   background: none;
   color: #fff;
 }
@@ -125,9 +125,9 @@ body main article h2 {
 body main article p {
   color: hsl(232, 13%, 33%);
   font-size: 4.5rem;
-  letter-spacing: -0.7px;
+  letter-spacing: -2.1px;
   display: flex;
-  gap: 5px;
+  gap: 6px;
   align-items: center;
   justify-content: center;
 }
@@ -155,22 +155,40 @@ body main article button {
   letter-spacing: 2px;
   padding: 15px 20px;
   border-radius: 0.3rem;
-  border: 1px solid transparent;
-  transition: all 0.2s ease-in-out;
+  border: 0;
+  box-shadow: 0 0 0 1px transparent;
   cursor: pointer;
 }
 body main article button:hover {
-  border-color: hsl(237, 63%, 64%);
+  box-shadow: 0 0 0 1px hsl(237, 63%, 64%);
   background: none;
   color: hsl(237, 63%, 64%);
 }
 
 @media (min-width: 1200px) {
+  body {
+    background: url(../images/bg-top.svg) top right no-repeat, url(../images/bg-bottom.svg) bottom left no-repeat hsl(240, 78%, 98%);
+    min-height: 100vh;
+    padding-top: 72px;
+  }
+  body header nav {
+    margin-bottom: 4rem;
+  }
   body main {
     gap: 0;
     flex-direction: row;
+    max-width: 1050px;
+    margin: 0 auto;
   }
   body main article.inverted {
-    padding: 4.2rem 2rem 4rem;
+    padding: 3.7rem 2rem 3.4rem;
+  }
+  body main article#basic {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  body main article#master {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 }/*# sourceMappingURL=styles.css.map */
