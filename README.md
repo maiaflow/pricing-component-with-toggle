@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/pricing-component-with-toggle-using-css-and-js-2e3M-Hnfm5)
-- Live Site URL: [Add live site URL here](https://maiaflow.github.io/pricing-component-with-toggle/)
+- Solution URL: [https://www.frontendmentor.io/solutions/pricing-component-with-toggle-using-css-and-js-2e3M-Hnfm5](https://www.frontendmentor.io/solutions/pricing-component-with-toggle-using-css-and-js-2e3M-Hnfm5)
+- Live Site URL: [https://maiaflow.github.io/pricing-component-with-toggle/](https://maiaflow.github.io/pricing-component-with-toggle/)
 
 ## My process
 
@@ -51,9 +51,7 @@ I learned about how checkboxes can be used and transformed to create interactivi
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I'd like to learn how to do something like this without any JS. 
 
 ### Useful resources
 
