@@ -14,6 +14,7 @@
             article {
                 &.inverted {
                     padding: 3.7rem 2rem 3.4rem;
+                    position: relative;
                 }
                 &#basic {
                     border-top-right-radius: 0;
@@ -22,6 +23,9 @@
                 &#master {
                     border-top-left-radius: 0;
                     border-bottom-left-radius: 0;
+                }
+                p {
+                    gap: 10px;
                 }
             }
         }

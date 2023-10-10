@@ -182,6 +182,7 @@ body main article button:hover {
   }
   body main article.inverted {
     padding: 3.7rem 2rem 3.4rem;
+    position: relative;
   }
   body main article#basic {
     border-top-right-radius: 0;
@@ -190,5 +191,8 @@ body main article button:hover {
   body main article#master {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+  }
+  body main article p {
+    gap: 10px;
   }
 }/*# sourceMappingURL=styles.css.map */
