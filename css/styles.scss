@@ -51,7 +51,9 @@ body {
                 height: 31px;
                 border-radius: 999px;
                 background: linear-gradient(141deg,$gradient2,$gradient1);
+                transition-duration: 0.3s;
                 -webkit-transition-duration: 0.3s;
+                transition-property: background-color, box-shadow;
                 -webkit-transition-property: background-color, box-shadow;
                 cursor: pointer;
                 display: flex;
@@ -67,8 +69,11 @@ body {
                 height: 24px;
                 border-radius: inherit;
                 background: #ffffff;
+                transition-timing-function: cubic-bezier(.54,1.85,.5,1);
                 -webkit-transition-timing-function: cubic-bezier(.54,1.85,.5,1);
+                transition-duration: 0.3s;
                 -webkit-transition-duration: 0.3s;
+                transition-property: transform, background-color, box-shadow;
                 -webkit-transition-property: transform, background-color, box-shadow;
                 -moz-transition-timing-function: cubic-bezier(.54,1.85,.5,1);
                 -moz-transition-duration: 0.3s;
